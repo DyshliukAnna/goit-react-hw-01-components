@@ -34,3 +34,13 @@ const Profile = ({ username, tag, location, avatar, followers, views, likes }) =
 }
 
 export default Profile;
+
+Profile.propTypes = {
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    followers: PropTypes.string.isRequired,
+    views: PropTypes.string.isRequired,
+    likes: PropTypes.string.isRequired,
+}
