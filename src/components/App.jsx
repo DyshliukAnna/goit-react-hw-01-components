@@ -25,12 +25,14 @@ const App = () => {
         views={dataUser.stats.views}
         likes={dataUser.stats.views}
       />
-      <TransactionHistory items={dataTransactions} />
-      <FriendList friends={dataFriends} />
       <Statistics
         title={dataStats.title}
         stats={dataStats}
       />
+      <FriendList friends={dataFriends} />
+      <TransactionHistory items={dataTransactions} />
+      
+      
     </div>
   );
 };
