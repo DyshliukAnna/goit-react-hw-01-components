@@ -3,26 +3,24 @@ import css from './Statistics.module.css';
 
 const Statistics = ({ title, stats }) => {
     return <section className={css.statistics}>
-    {title && <h2 className={css.title}>{title}</h2>}
-
-  <ul className={css.statList}>
-    <li className={css.item}>
-      <span class="label">.docx</span>
-      <span class="percentage">4%</span>
-    </li>
-    <li class="item">
-      <span class="label">.mp3</span>
-      <span class="percentage">14%</span>
-    </li>
-    <li class="item">
-      <span class="label">.pdf</span>
-      <span class="percentage">41%</span>
-    </li>
-    <li class="item">
-      <span class="label">.mp4</span>
-      <span class="percentage">12%</span>
-    </li>
-  </ul>
-</section>
+        {title && <h2 className={css.title}>{title}</h2>}
+        <ul className={css.statList}>
+            {stats.map(({ id, label, percentage }) => {
+                return <li key={id} className={css.item}>
+                    <span className={css.label}>{label}</span>
+                    <span className={css.percentage}>{percentage}</span>
+                </li>;
+            })}
+        </ul>
+    </section >;
 }
 export default Statistics;
+
+Statistics.propTypes = {
+    title: PropTypes.string,
+    stats: PropTypes.arrayOf(PropTypes.exact({
+        id: PropTypes.string.isRequired,
+        label: PropTypes.string,
+        percentage: PropTypes.number,
+    }))
+}
