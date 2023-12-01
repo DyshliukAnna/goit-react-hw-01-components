@@ -12,20 +12,27 @@ import dataTransactions from '../transactions.json';
 import './App.css'
 
 
-export const App = () => {
+const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-       homework 
+    <div className='container'>
+      <Profile
+        key={dataUser.tag}
+        username={dataUser.username}
+        tag={dataUser.tag}
+        location={dataUser.location}
+        avatar={dataUser.avatar}
+        followers={dataUser.stats.followers}
+        views={dataUser.stats.views}
+        likes={dataUser.stats.views}
+      />
+      <TransactionHistory items={dataTransactions} />
+      <FriendList friends={dataFriends} />
+      <Statistics
+        title={dataStats.title}
+        stats={dataStats}
+      />
     </div>
   );
 };
 
+export default App;
