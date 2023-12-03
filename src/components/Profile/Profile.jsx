@@ -21,12 +21,12 @@ const Profile = ({ username, tag, location, avatar, followers, views, likes }) =
       <span className={css.quantity}>{followers}</span>
     </li>
     <li className={css.stats__item}>
-      <span class={css.label}>Views</span>
-      <span class={css.quantity}>{views}</span>
+      <span className={css.label}>Views</span>
+      <span className={css.quantity}>{views}</span>
     </li>
     <li className={css.stats__item}>
-      <span class={css.label}>Likes</span>
-      <span class={css.quantity}>{likes}</span>
+      <span classNaame={css.label}>Likes</span>
+      <span className={css.quantity}>{likes}</span>
     </li>
   </ul>
 </div>
