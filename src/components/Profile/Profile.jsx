@@ -42,5 +42,5 @@ Profile.propTypes = {
     avatar: PropTypes.string.isRequired,
     followers: PropTypes.number.isRequired,
     views: PropTypes.number.isRequired,
-    likes: PropTypes.number.isRequired,
+    likes: PropTypes.string.isRequired,
 }
