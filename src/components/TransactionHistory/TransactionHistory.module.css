@@ -1,24 +1,24 @@
-.transactions {
-}
+/* .transactions {
+} */
 .titleTable {
-    background-color: aqua;
+  background-color: aqua;
 }
-.transactionHistory{
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 500px;
-    border-radius: 10px;
-    margin: 50px auto;
+.transactionHistory {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 500px;
+  border-radius: 10px;
+  margin: 50px auto;
 }
 
 .transactionHistory th,
 .transactionHistory td {
-    border: 1px solid rgba(131, 127, 127, 0.775);
-    border-radius: 5px;
-    padding: 10px;
-    color: rgba(0, 0, 0, 0.792);
+  border: 1px solid rgba(131, 127, 127, 0.775);
+  border-radius: 5px;
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.792);
 }
 
 .main {
-    text-align: center;
+  text-align: center;
 }

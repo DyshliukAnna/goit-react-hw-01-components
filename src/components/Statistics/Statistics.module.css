@@ -3,12 +3,10 @@
   flex-direction: column;
   align-items: center;
   margin: 30px auto;
-  /* background-color: rgba(131, 127, 127, 0.775); */
   max-width: 500px;
-  /* max-height: 600px; */
   border-radius: 5px;
   color: rgba(0, 0, 0, 0.792);
- 
+
   box-shadow: 2px 2px 7px rgba(131, 127, 127, 0.775);
 }
 .title {
@@ -17,7 +15,6 @@
   background-color: white;
   justify-content: space-between;
   color: brown;
-
 }
 .statList {
   margin: 0px;
@@ -26,7 +23,6 @@
   width: 500px;
   padding: 0px;
   justify-content: space-between;
-
 }
 .item {
   display: flex;
@@ -34,5 +30,4 @@
   align-items: center;
   justify-content: center;
   width: 100px;
-  /* justify-content: space-between; */
 }
