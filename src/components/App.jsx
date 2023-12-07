@@ -3,18 +3,16 @@ import Statistics from './Statistics/Statistics';
 import FriendList from './FriendList/FriendList';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
 
+import dataUser from 'data/user.json';
+import dataStats from 'data/data.json';
+import dataFriends from 'data/friends.json';
+import dataTransactions from 'data/transactions.json';
 
-import dataUser from '../user.json';
-import dataStats from '../data.json';
-import dataFriends from '../friends.json';
-import dataTransactions from '../transactions.json';
-
-import './App.css'
-
+import './App.css';
 
 const App = () => {
   return (
-    <div className='container'>
+    <div className="container">
       <Profile
         key={dataUser.tag}
         username={dataUser.username}
@@ -25,14 +23,9 @@ const App = () => {
         views={dataUser.stats.views}
         likes={dataUser.stats.views}
       />
-      <Statistics
-        title={dataStats.title}
-        stats={dataStats}
-      />
+      <Statistics title={dataStats.title} stats={dataStats} />
       <FriendList friends={dataFriends} />
       <TransactionHistory items={dataTransactions} />
-      
-      
     </div>
   );
 };
